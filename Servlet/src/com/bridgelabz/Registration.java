@@ -40,6 +40,7 @@ public class Registration extends HttpServlet{
 			  if(count>0)
 	          {
 	            out.println("You are sucessfully registered");
+	            resp.sendRedirect("PreSuccess");
 	          }
 		  }
 		  catch (Exception e) 

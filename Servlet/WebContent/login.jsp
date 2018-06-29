@@ -35,11 +35,9 @@ input {
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 </tr>
-<tr>
-<td><a href="changePassword.html">Forgot Password?</a></td>
-</tr>
 
-<td><a href="Register.jsp">SIGNUP</a></td>
+
+
 </table>
 </form>
 </body>

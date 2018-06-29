@@ -7,13 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
-<body>
 <form action="ChangePassword" method="post">
 <fieldset title="Change Password">
 <legend><B>Change password</B></legend>
@@ -45,7 +38,5 @@
 </table>
 </fieldset>
 </form>
-</body>
-</html>
 </body>
 </html>
