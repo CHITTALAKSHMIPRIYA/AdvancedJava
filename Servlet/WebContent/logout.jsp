@@ -7,11 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="LogoutServlet" method="post">
-<h1>WELCOME</h1>
-<%String id=(String)request.getSession().getAttribute("passID");
-out.print("your id is :"+id);%>
-<input type="submit" value="Logout"/>
+<form action="PreSuccess" method="post">
+
 </form>
 </body>
 </html>

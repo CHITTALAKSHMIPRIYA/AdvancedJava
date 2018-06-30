@@ -11,6 +11,7 @@ import javax.servlet.RequestDispatcher;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 
 
@@ -46,17 +47,20 @@ public class LoginRegistration extends HttpServlet{
 			
 			if(rs.next())
 			{
-				out.print("<h1>Credentials are valid</h1>");
-				out.println(id+" "+password); 
-				//dispatcher=req.getRequestDispatcher("Welcome");
-				//dispatcher.forward(req,resp);
-				resp.sendRedirect("PreSuccess");
+				HttpSession session=req.getSession(true);
+				session.setMaxInactiveInterval(1*60);
+				session.setAttribute("passID",id);
+				RequestDispatcher dispatch=req.getRequestDispatcher("PreSuccess");
+				dispatch.forward(req, resp);
 				
 				
 			}
 			else
 			{
-				out.print("<html><body><h1>Invalid Credentials </h1><a href='index.jsp'>BACK</a></body></html>");
+				HttpSession session=req.getSession(true);
+				session.setAttribute("passID",id);
+				RequestDispatcher dispatch=req.getRequestDispatcher("PreError");
+				dispatch.forward(req, resp);
 			}
 		}
 			 catch(Exception e)

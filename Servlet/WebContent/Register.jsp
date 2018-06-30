@@ -33,7 +33,7 @@ input {
 </tr>
 <tr>
 <td>MOBILE:</td>
-<td><input type="text" name="mobile"></td>
+<td><input type="number" name="mobile"></td>
 </tr>
 <tr>
 <td>PASSWORD:</td>
