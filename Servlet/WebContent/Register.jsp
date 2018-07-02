@@ -29,7 +29,7 @@ input {
 </tr>
 <tr>
 <td>Email:</td>
-<td><input type="text" name="gmail"></td>
+<td><input type="text" name="gmail" pattern="([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"/></td>
 </tr>
 <tr>
 <td>MOBILE:</td>
@@ -37,7 +37,7 @@ input {
 </tr>
 <tr>
 <td>PASSWORD:</td>
-<td><input type="text" name="password"></td>
+<td><input type="password" name="password" pattern="((?=.*\d)(?=.*[a-z])(?=.(A-Z)(?=.*[@#$]).{8,})" title="password should contain atleast 8 characters"/></td>
 </tr>
        
      <tr><td>   <input type="submit" value="register" /></td></tr>
