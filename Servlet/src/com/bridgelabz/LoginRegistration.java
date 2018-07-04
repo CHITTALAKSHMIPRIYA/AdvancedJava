@@ -15,9 +15,10 @@ import javax.servlet.http.HttpSession;
 
 
 
-public class LoginRegistration extends HttpServlet{
-	protected void doPost(HttpServletRequest req,HttpServletResponse resp ) { 
-		
+public class LoginRegistration extends HttpServlet
+{
+	protected void doPost(HttpServletRequest req,HttpServletResponse resp) 
+	{ 
 		String id=req.getParameter("id");
 		String password=req.getParameter("password");
 		String name=req.getParameter("passName");

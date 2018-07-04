@@ -31,6 +31,10 @@ input {
 <td><input type="submit" value="login"></td>
 <td><input type="reset" value="reset"></td>
 </tr>
+</form>
+<form action="PrePassword" method="post">
+<td><input type="submit" value="forgot password"></td>
+</form>
 <tr>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
@@ -39,6 +43,6 @@ input {
 
 
 </table>
-</form>
+
 </body>
 </html>

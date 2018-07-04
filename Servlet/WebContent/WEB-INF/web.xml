@@ -3,7 +3,6 @@
   <display-name>Servlet</display-name>
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>
-    <welcome-file>login.jsp</welcome-file>
   </welcome-file-list>
   <servlet>
     <servlet-name>Registration</servlet-name>
@@ -77,6 +76,22 @@
     <servlet-name>LogoutServlet</servlet-name>
     <url-pattern>/LogoutServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <servlet-name>MailApp</servlet-name>
+    <servlet-class>com.bridgelabz.MailApp</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MailApp</servlet-name>
+    <url-pattern>/MailApp</url-pattern>
+  </servlet-mapping>
+   <servlet>
+    <servlet-name>PrePassword</servlet-name>
+    <servlet-class>com.bridgelabz.PrePassword</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PrePassword</servlet-name>
+    <url-pattern>/PrePassword</url-pattern>
+  </servlet-mapping>
   <filter>
     <filter-name>LoginFilter</filter-name>
     <filter-class>com.bridgelabz.LoginFilter</filter-class>
@@ -94,6 +109,9 @@
     <url-pattern>/Registration</url-pattern>
   </filter-mapping>
   <listener>
-  <listener-class>com.bridgelabz.Listener</listener-class>
+    <listener-class>com.bridgelabz.Listener</listener-class>
+  </listener>
+  <listener>
+    <listener-class>com.bridgelabz.SessionCounterListener</listener-class>
   </listener>
 </web-app>
